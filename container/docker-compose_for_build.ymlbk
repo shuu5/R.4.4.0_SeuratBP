@@ -1,7 +1,12 @@
 services:
   rstudio:
     container_name: r440seuratbp
-    image: shuu5/seuratbp-container:latest
+    image: r440seuratbp:latest
+    container_name: r440container
+    image: r440image:latest
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
     ports:
       - "8787:8787"
     environment:

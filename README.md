@@ -22,8 +22,12 @@
     ```bash
     cursor container/
     ```
-6. コマンドパレットを開く (Ctrl + Shift + P)。
-7. 「Remote-Containers: Open Folder in Container」を選択する。
+6. 使用するdockerイメージをダウンロードする
+    ```bash
+    docker pull shuu5/seuratbp-container:latest
+    ```
+7. コマンドパレットを開く (Ctrl + Shift + P)。
+8. 「Remote-Containers: Open Folder in Container」を選択する。
 8. projectsフォルダの任意のプロジェクトフォルダに移動する。
     ```bash
     cd projects/任意のプロジェクトフォルダ/
