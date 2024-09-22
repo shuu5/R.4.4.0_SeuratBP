@@ -9,15 +9,33 @@
     ```bash
     git clone https://github.com/shuu5/R.4.4.0_SeuratBP.git
     ```
-2. VSCodeでクローンしたフォルダを開く。(コマンド：cursor R.4.4.0_SeuratBP/)
-3. コマンド：sudo docker_init.sh を実行する。
+2. VSCodeでクローンしたフォルダを開く。
+    ```bash
+    cursor R.4.4.0_SeuratBP/
+    ```
+3. Dockerの自動セットアップを行う(docker_init.sh を実行する。)
+    ```bash
+    sudo docker_init.sh
+    ```
 4. 拡張機能「Dev Containers」「Remote Explorer」「Docker」をインストールする。
-5. containerフォルダを開く。(コマンド：cursor container/)
+5. containerフォルダを開く。
+    ```bash
+    cursor container/
+    ```
 6. コマンドパレットを開く (Ctrl + Shift + P)。
 7. 「Remote-Containers: Open Folder in Container」を選択する。
-8. projectsフォルダの任意のプロジェクトフォルダに移動する(コマンド：cd projects/任意のプロジェクトフォルダ/)
-9. コマンド：R を入力してRを起動する。
-10. コマンド：renv::restore() を入力して依存関係をインストールする。
+8. projectsフォルダの任意のプロジェクトフォルダに移動する。
+    ```bash
+    cd projects/任意のプロジェクトフォルダ/
+    ```
+9. Rを起動する。
+    ```bash
+    R
+    ```
+10. R内で依存関係をインストールする。
+    ```R
+    renv::restore()
+    ```
 11. (RStudio-serverを使用する場合は、[http://localhost:8787](http://localhost:8787)にアクセスする。)
 
 
