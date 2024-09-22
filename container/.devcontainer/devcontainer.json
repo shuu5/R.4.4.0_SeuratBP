@@ -1,0 +1,17 @@
+{
+  "name": "RStudio Development Container",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "rstudio",
+  "workspaceFolder": "/home/rstudio",
+  "settings": {
+    "r.rterm.linux": "/usr/local/bin/R",
+    "r.rterm.option": [
+      "--no-save",
+      "--no-restore"
+    ],
+    "r.lsp.path": "/usr/local/bin/R"
+  },
+  "extensions": [
+    "reditorsupport.r"
+  ]
+}

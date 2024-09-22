@@ -1,0 +1,47 @@
+# R関連の一般的な除外ファイル
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# renv関連の除外設定（プロジェクト毎に適用）
+renv_cache/*
+!renv_cache/.gitkeep
+
+**/renv/
+
+# データファイルの除外設定
+**/data/*
+!**/data/.gitkeep
+
+# 出力ディレクトリ
+**/output/*
+!**/output/.gitkeep
+
+
+
+# プロジェクト固有の.Rprofile（renvの設定を含む）は追跡する
+!**/.Rprofile
+
+# renv.lockファイルは追跡する（依存関係の管理に重要）
+!**/renv.lock
+
+# .envファイルは追跡しない
+container/.env
+
+# OSによって生成されるファイル
+.DS_Store
+Thumbs.db
+
+# エディタの一時ファイル
+*.swp
+*.swo
+*~
+
+# ログファイル
+*.log
+
+# データファイル（必要に応じてコメントアウト）
+# *.csv
+# *.xlsx
+# *.rds
