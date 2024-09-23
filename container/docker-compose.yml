@@ -12,6 +12,7 @@ services:
     volumes:
       - ./projects:/home/rstudio/projects
       - ./.devcontainer:/home/rstudio/.devcontainer
+      - ./.vscode:/home/rstudio/.vscode
       - ${RENV_PATHS_CACHE_HOST}:/home/rstudio/.local/share/renv/cache
     env_file:
       - .env
