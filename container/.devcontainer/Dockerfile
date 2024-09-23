@@ -40,11 +40,7 @@ RUN mkdir -p /home/rstudio/.local/share/renv/cache \
 # renv, languageserver, jsonlite, remotesをインストール
 RUN R -e "install.packages('jsonlite', repos = c(CRAN = 'https://cloud.r-project.org'))"
 RUN R -e "install.packages('renv', repos = c(CRAN = 'https://cloud.r-project.org'))"
-<<<<<<< HEAD
-RUN R -e "install.packages('remotes', repos = c(CRAN = 'https://cloud.r-project.org'))"
-=======
 RUN R -e "install.packages('remotes', repos = c(CRAN = 'https://cloud.r-project.org'))"
 
 # remotesを使って、githubからのパッケージインストール(BPCells)
 RUN R -e "remotes::install_github('bnprks/BPCells/r')"
->>>>>>> origin/main

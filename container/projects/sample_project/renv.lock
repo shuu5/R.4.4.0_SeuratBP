@@ -16,43 +16,6 @@
       "Repository": "CRAN",
       "Hash": "a8235afbcd6316e6e91433ea47661013"
     },
-    "BPCells": {
-      "Package": "BPCells",
-      "Version": "0.2.0",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "BPCells",
-      "RemoteUsername": "bnprks",
-      "RemoteRef": "HEAD",
-      "RemoteSha": "b78bc8321db802c6ebf29edc2296394f2e8587c6",
-      "RemoteSubdir": "r",
-      "Requirements": [
-        "Matrix",
-        "R",
-        "RColorBrewer",
-        "Rcpp",
-        "RcppEigen",
-        "dplyr",
-        "ggplot2",
-        "ggrepel",
-        "grDevices",
-        "hexbin",
-        "lifecycle",
-        "magrittr",
-        "methods",
-        "patchwork",
-        "readr",
-        "rlang",
-        "scales",
-        "scattermore",
-        "stringr",
-        "tibble",
-        "tidyr",
-        "vctrs"
-      ],
-      "Hash": "919f33ce16f0d4d0b581bbbfe79c5dc0"
-    },
     "DBI": {
       "Package": "DBI",
       "Version": "1.2.3",
@@ -88,7 +51,8 @@
     "MASS": {
       "Package": "MASS",
       "Version": "7.3-60.2",
-      "Source": "unknown",
+      "Source": "Repository",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "grDevices",
@@ -1191,23 +1155,6 @@
       ],
       "Hash": "24b224366f9c2e7534d2344d10d59211"
     },
-    "hexbin": {
-      "Package": "hexbin",
-      "Version": "1.28.3",
-      "Source": "Repository",
-      "Repository": "RSPM",
-      "Requirements": [
-        "R",
-        "grDevices",
-        "graphics",
-        "grid",
-        "lattice",
-        "methods",
-        "stats",
-        "utils"
-      ],
-      "Hash": "124e384c01d8746f1c12f9dc1b80a161"
-    },
     "highr": {
       "Package": "highr",
       "Version": "0.11",
@@ -1924,20 +1871,6 @@
         "tibble"
       ],
       "Hash": "76c9e04c712a05848ae7a23d2f170a40"
-    },
-    "remotes": {
-      "Package": "remotes",
-      "Version": "2.5.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "methods",
-        "stats",
-        "tools",
-        "utils"
-      ],
-      "Hash": "3ee025083e66f18db6cf27b56e23e141"
     },
     "renv": {
       "Package": "renv",

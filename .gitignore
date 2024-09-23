@@ -8,7 +8,8 @@
 renv_cache/*
 !renv_cache/.gitkeep
 
-**/renv/
+**/renv/*
+!**/renv/settings.dcf
 
 # データファイルの除外設定
 **/data/*
