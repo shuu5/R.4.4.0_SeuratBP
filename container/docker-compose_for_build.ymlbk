@@ -2,8 +2,6 @@ services:
   rstudio:
     container_name: r440seuratbp
     image: r440seuratbp:latest
-    container_name: r440container
-    image: r440image:latest
     build:
       context: .
       dockerfile: .devcontainer/Dockerfile
@@ -13,7 +11,6 @@ services:
       - PASSWORD=password
       - DISABLE_AUTH=true
       - RENV_PATHS_CACHE=/home/rstudio/.local/share/renv/cache
-      - GITHUB_PAT=${GITHUB_PAT}
     volumes:
       - ./projects:/home/rstudio/projects
       - ./.devcontainer:/home/rstudio/.devcontainer

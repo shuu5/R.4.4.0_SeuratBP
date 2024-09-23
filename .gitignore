@@ -27,8 +27,6 @@ renv_cache/*
 # renv.lockファイルは追跡する（依存関係の管理に重要）
 !**/renv.lock
 
-# .envファイルは追跡しない
-container/.env
 
 # OSによって生成されるファイル
 .DS_Store
