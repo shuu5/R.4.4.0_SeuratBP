@@ -1,19 +1,18 @@
 services:
   rstudio:
     container_name: r440seuratbp
-    image: r440seuratbp:latest
-    build:
-      context: .
-      dockerfile: .devcontainer/Dockerfile
+    image: shuu5/seuratbp-container:latest
     ports:
       - "8787:8787"
     environment:
       - PASSWORD=password
       - DISABLE_AUTH=true
       - RENV_PATHS_CACHE=/home/rstudio/.local/share/renv/cache
+      - GITHUB_PAT=${GITHUB_PAT}
     volumes:
       - ./projects:/home/rstudio/projects
       - ./.devcontainer:/home/rstudio/.devcontainer
+      - ./.vscode:/home/rstudio/.vscode
       - ${RENV_PATHS_CACHE_HOST}:/home/rstudio/.local/share/renv/cache
     env_file:
       - .env

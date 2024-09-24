@@ -19,6 +19,9 @@ renv_cache/*
 **/output/*
 !**/output/.gitkeep
 
+# .envファイルは追跡しない
+container/.env
+
 
 
 # プロジェクト固有の.Rprofile（renvの設定を含む）は追跡する

@@ -1,1 +1,1 @@
-ignored.packages: BPCells
+ignored.packages: BPCells, presto, glmGamPoi
