@@ -2,7 +2,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Copy Template to Projects",
+            "label": "Create New Project",
             "type": "shell",
             "command": "mkdir -p projects/new_project && cp -r .vscode/.templates/project_template/* projects/new_project/",
             "group": {
