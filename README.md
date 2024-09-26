@@ -6,7 +6,7 @@
 ## 準備
 1. GitHubのアカウントを作成する。
 2. GitHub Personal Access Tokenを作成する。
-    - [GitHubの設定](https://github.com/settings/tokens)から「Generate new token」をクリック
+    - [GitHubの設定](https://github.com/settings/tokens)から「Generate new token(classic)」をクリック
     - 「repo」の権限をチェックして「Generate」をクリック
     - 表示されたトークンをコピーして保存する
 3. Cursorをインストールする。
@@ -36,21 +36,23 @@
     ```bash
     docker pull shuu5/seuratbp-container:latest
     ```
-7. コマンドパレットを開く (Ctrl + Shift + P)。
-8. 「Remote-Containers: Open Folder in Container」を選択する。
-8. projectsフォルダの任意のプロジェクトフォルダ(まずはsample_projectを試すと良い)に移動する。
+7. .env.exampleのGITHUB_PATに先ほど取得したGithub Personal Access Tokenを設定する。
+8. .env.exampleを.envという名前に変更する。
+9. コマンドパレットを開く (Ctrl + Shift + P)。
+10. 「Remote-Containers: Open Folder in Container」を選択する。
+11. projectsフォルダの任意のプロジェクトフォルダ(まずはsample_projectを試すと良い)に移動する。
     ```bash
     cd projects/sample_project/
     ```
-9. Rを起動する。
+12. Rを起動する。
     ```bash
     R
     ```
-10. R内で依存関係をインストールする。(初回はかなり時間がかかる)
+13. R内で依存関係をインストールする。(初回はかなり時間がかかる)
     ```R
     renv::restore()
     ```
-11. (RStudio-serverを使用する場合は、[http://localhost:8787](http://localhost:8787)にアクセスする。)
+14. (RStudio-serverを使用する場合は、[http://localhost:8787](http://localhost:8787)にアクセスする。)
 
 ## 新しいプロジェクトを立ち上げる場合
 
@@ -78,6 +80,9 @@
     renv::install("パッケージ名")
     ```
 2. src/libraries.Rに追記する。
+    ```R
+    library(パッケージ名)
+    ```
 3. 依存関係をrenv.lockに反映させる。
     ```R
     renv::snapshot()
