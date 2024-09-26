@@ -3,18 +3,333 @@
     "Version": "4.4.0",
     "Repositories": [
       {
+        "Name": "BioCsoft",
+        "URL": "https://bioconductor.org/packages/3.19/bioc"
+      },
+      {
+        "Name": "BioCann",
+        "URL": "https://bioconductor.org/packages/3.19/data/annotation"
+      },
+      {
+        "Name": "BioCexp",
+        "URL": "https://bioconductor.org/packages/3.19/data/experiment"
+      },
+      {
+        "Name": "BioCworkflows",
+        "URL": "https://bioconductor.org/packages/3.19/workflows"
+      },
+      {
+        "Name": "BioCbooks",
+        "URL": "https://bioconductor.org/packages/3.19/books"
+      },
+      {
         "Name": "CRAN",
         "URL": "https://p3m.dev/cran/2024-06-13"
+      },
+      {
+        "Name": "https://satijalab.r-universe.dev",
+        "URL": "https://satijalab.r-universe.dev"
+      },
+      {
+        "Name": "https://bnprks.r-universe.dev/",
+        "URL": "https://bnprks.r-universe.dev"
       }
     ]
   },
+  "Bioconductor": {
+    "Version": "3.19"
+  },
   "Packages": {
+    "AnnotationDbi": {
+      "Package": "AnnotationDbi",
+      "Version": "1.66.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "Biobase",
+        "BiocGenerics",
+        "DBI",
+        "IRanges",
+        "KEGGREST",
+        "R",
+        "RSQLite",
+        "S4Vectors",
+        "methods",
+        "stats",
+        "stats4"
+      ],
+      "Hash": "b7df9c597fb5533fc8248d73b8c703ac"
+    },
+    "AnnotationFilter": {
+      "Package": "AnnotationFilter",
+      "Version": "1.28.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "GenomicRanges",
+        "R",
+        "lazyeval",
+        "methods",
+        "utils"
+      ],
+      "Hash": "24e809470aef6d81b25003d775b2fb56"
+    },
+    "Azimuth": {
+      "Package": "Azimuth",
+      "Version": "0.5.0",
+      "Source": "GitHub",
+      "Remotes": "immunogenomics/presto, satijalab/seurat-data, mojaveazure/seurat-disk",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "azimuth",
+      "RemoteUsername": "satijalab",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "243ee5db80fcbffa3452c944254a325a3da2ef9e",
+      "Requirements": [
+        "BSgenome.Hsapiens.UCSC.hg38",
+        "DT",
+        "EnsDb.Hsapiens.v86",
+        "JASPAR2020",
+        "Matrix",
+        "R",
+        "Rcpp",
+        "Seurat",
+        "SeuratData",
+        "SeuratDisk",
+        "SeuratObject",
+        "Signac",
+        "TFBSTools",
+        "future",
+        "ggplot2",
+        "glmGamPoi",
+        "googlesheets4",
+        "hdf5r",
+        "htmltools",
+        "httr",
+        "jsonlite",
+        "methods",
+        "patchwork",
+        "plotly",
+        "presto",
+        "rlang",
+        "scales",
+        "shiny",
+        "shinyBS",
+        "shinydashboard",
+        "shinyjs",
+        "stats",
+        "stringr",
+        "tools",
+        "utils",
+        "withr"
+      ],
+      "Hash": "59d0a6084aa8b75b77a5da511d0786f6"
+    },
     "BH": {
       "Package": "BH",
       "Version": "1.84.0-0",
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "a8235afbcd6316e6e91433ea47661013"
+    },
+    "BPCells": {
+      "Package": "BPCells",
+      "Version": "0.2.0",
+      "Source": "Repository",
+      "Repository": "https://bnprks.r-universe.dev",
+      "Requirements": [
+        "Matrix",
+        "R",
+        "RColorBrewer",
+        "Rcpp",
+        "RcppEigen",
+        "dplyr",
+        "ggplot2",
+        "ggrepel",
+        "grDevices",
+        "hexbin",
+        "lifecycle",
+        "magrittr",
+        "methods",
+        "patchwork",
+        "readr",
+        "rlang",
+        "scales",
+        "scattermore",
+        "stringr",
+        "tibble",
+        "tidyr",
+        "vctrs"
+      ],
+      "Hash": "9ce5db28eeae48cd647f80bcaf5380b3"
+    },
+    "BSgenome": {
+      "Package": "BSgenome",
+      "Version": "1.72.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BiocGenerics",
+        "BiocIO",
+        "Biostrings",
+        "GenomeInfoDb",
+        "GenomicRanges",
+        "IRanges",
+        "R",
+        "Rsamtools",
+        "S4Vectors",
+        "XVector",
+        "matrixStats",
+        "methods",
+        "rtracklayer",
+        "stats",
+        "utils"
+      ],
+      "Hash": "9e00bf24b78d10f32cb8e1dceb5f87ff"
+    },
+    "BSgenome.Hsapiens.UCSC.hg38": {
+      "Package": "BSgenome.Hsapiens.UCSC.hg38",
+      "Version": "1.4.5",
+      "Source": "Bioconductor",
+      "Requirements": [
+        "BSgenome",
+        "GenomeInfoDb",
+        "R"
+      ],
+      "Hash": "0ba28cc20a4f8629fbb30d0bf1a133ac"
+    },
+    "Biobase": {
+      "Package": "Biobase",
+      "Version": "2.64.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BiocGenerics",
+        "R",
+        "methods",
+        "utils"
+      ],
+      "Hash": "9bc4cabd3bfda461409172213d932813"
+    },
+    "BiocGenerics": {
+      "Package": "BiocGenerics",
+      "Version": "0.50.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "R",
+        "graphics",
+        "methods",
+        "stats",
+        "utils"
+      ],
+      "Hash": "ef32d07aafdd12f24c5827374ae3590d"
+    },
+    "BiocIO": {
+      "Package": "BiocIO",
+      "Version": "1.14.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BiocGenerics",
+        "R",
+        "S4Vectors",
+        "methods",
+        "tools"
+      ],
+      "Hash": "f97a7ef01d364cf20d1946d43a3d526f"
+    },
+    "BiocManager": {
+      "Package": "BiocManager",
+      "Version": "1.30.23",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "utils"
+      ],
+      "Hash": "47e968dfe563c1b22c2e20a067ec21d5"
+    },
+    "BiocParallel": {
+      "Package": "BiocParallel",
+      "Version": "1.38.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BH",
+        "R",
+        "codetools",
+        "cpp11",
+        "futile.logger",
+        "methods",
+        "parallel",
+        "snow",
+        "stats",
+        "utils"
+      ],
+      "Hash": "7b6e79f86e3d1c23f62c5e2052e848d4"
+    },
+    "BiocVersion": {
+      "Package": "BiocVersion",
+      "Version": "3.19.1",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "b892e27fc9659a4c8f8787d34c37b8b2"
+    },
+    "Biostrings": {
+      "Package": "Biostrings",
+      "Version": "2.72.1",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BiocGenerics",
+        "GenomeInfoDb",
+        "IRanges",
+        "R",
+        "S4Vectors",
+        "XVector",
+        "crayon",
+        "grDevices",
+        "methods",
+        "stats",
+        "utils"
+      ],
+      "Hash": "886ff0ed958d6f839ed2e0d01f6853b3"
+    },
+    "CNEr": {
+      "Package": "CNEr",
+      "Version": "1.40.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BiocGenerics",
+        "Biostrings",
+        "DBI",
+        "GO.db",
+        "GenomeInfoDb",
+        "GenomicAlignments",
+        "GenomicRanges",
+        "IRanges",
+        "KEGGREST",
+        "R",
+        "R.utils",
+        "RSQLite",
+        "S4Vectors",
+        "XVector",
+        "annotate",
+        "ggplot2",
+        "methods",
+        "parallel",
+        "poweRlaw",
+        "pwalign",
+        "readr",
+        "reshape2",
+        "rtracklayer",
+        "tools"
+      ],
+      "Hash": "ec6831fae6a3941aeacd3a685a9af5da"
     },
     "DBI": {
       "Package": "DBI",
@@ -27,6 +342,82 @@
       ],
       "Hash": "065ae649b05f1ff66bb0c793107508f5"
     },
+    "DT": {
+      "Package": "DT",
+      "Version": "0.33",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "crosstalk",
+        "htmltools",
+        "htmlwidgets",
+        "httpuv",
+        "jquerylib",
+        "jsonlite",
+        "magrittr",
+        "promises"
+      ],
+      "Hash": "64ff3427f559ce3f2597a4fe13255cb6"
+    },
+    "DelayedArray": {
+      "Package": "DelayedArray",
+      "Version": "0.30.1",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BiocGenerics",
+        "IRanges",
+        "Matrix",
+        "MatrixGenerics",
+        "R",
+        "S4Arrays",
+        "S4Vectors",
+        "SparseArray",
+        "methods",
+        "stats",
+        "stats4"
+      ],
+      "Hash": "395472c65cd9d606a1a345687102f299"
+    },
+    "DelayedMatrixStats": {
+      "Package": "DelayedMatrixStats",
+      "Version": "1.26.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "DelayedArray",
+        "IRanges",
+        "Matrix",
+        "MatrixGenerics",
+        "S4Vectors",
+        "methods",
+        "sparseMatrixStats"
+      ],
+      "Hash": "5d9536664ccddb0eaa68a90afe4ee76e"
+    },
+    "DirichletMultinomial": {
+      "Package": "DirichletMultinomial",
+      "Version": "1.46.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BiocGenerics",
+        "IRanges",
+        "S4Vectors",
+        "methods",
+        "stats4"
+      ],
+      "Hash": "220a1c460ab5a750477fb5431e192abd"
+    },
+    "EnsDb.Hsapiens.v86": {
+      "Package": "EnsDb.Hsapiens.v86",
+      "Version": "2.99.0",
+      "Source": "Bioconductor",
+      "Requirements": [
+        "ensembldb"
+      ],
+      "Hash": "626af36a8d6de3c44779ff2a073952e6"
+    },
     "FNN": {
       "Package": "FNN",
       "Version": "1.1.4",
@@ -36,6 +427,203 @@
         "R"
       ],
       "Hash": "eaabdc7938aa3632a28273f53a0d226d"
+    },
+    "GO.db": {
+      "Package": "GO.db",
+      "Version": "3.19.1",
+      "Source": "Bioconductor",
+      "Requirements": [
+        "AnnotationDbi",
+        "R",
+        "methods"
+      ],
+      "Hash": "46bfc38370acea3503c223347915e43b"
+    },
+    "GenomeInfoDb": {
+      "Package": "GenomeInfoDb",
+      "Version": "1.40.1",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BiocGenerics",
+        "GenomeInfoDbData",
+        "IRanges",
+        "R",
+        "S4Vectors",
+        "UCSC.utils",
+        "methods",
+        "stats",
+        "stats4",
+        "utils"
+      ],
+      "Hash": "171e9becd9bb948b9e64eb3759208c94"
+    },
+    "GenomeInfoDbData": {
+      "Package": "GenomeInfoDbData",
+      "Version": "1.2.12",
+      "Source": "Bioconductor",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "c3c792a7b7f2677be56e8632c5b7543d"
+    },
+    "GenomicAlignments": {
+      "Package": "GenomicAlignments",
+      "Version": "1.40.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BiocGenerics",
+        "BiocParallel",
+        "Biostrings",
+        "GenomeInfoDb",
+        "GenomicRanges",
+        "IRanges",
+        "R",
+        "Rsamtools",
+        "S4Vectors",
+        "SummarizedExperiment",
+        "methods",
+        "stats",
+        "utils"
+      ],
+      "Hash": "e539709764587c581b31e446dc84d7b8"
+    },
+    "GenomicFeatures": {
+      "Package": "GenomicFeatures",
+      "Version": "1.56.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "AnnotationDbi",
+        "BiocGenerics",
+        "Biostrings",
+        "DBI",
+        "GenomeInfoDb",
+        "GenomicRanges",
+        "IRanges",
+        "R",
+        "S4Vectors",
+        "XVector",
+        "methods",
+        "rtracklayer",
+        "stats",
+        "utils"
+      ],
+      "Hash": "0d19619d13b06b9dea85993ce7f09c52"
+    },
+    "GenomicRanges": {
+      "Package": "GenomicRanges",
+      "Version": "1.56.1",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BiocGenerics",
+        "GenomeInfoDb",
+        "IRanges",
+        "R",
+        "S4Vectors",
+        "XVector",
+        "methods",
+        "stats",
+        "stats4",
+        "utils"
+      ],
+      "Hash": "a3c822ef3c124828e25e7a9611beeb50"
+    },
+    "HDF5Array": {
+      "Package": "HDF5Array",
+      "Version": "1.32.1",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BiocGenerics",
+        "DelayedArray",
+        "IRanges",
+        "Matrix",
+        "R",
+        "Rhdf5lib",
+        "S4Arrays",
+        "S4Vectors",
+        "methods",
+        "rhdf5",
+        "rhdf5filters",
+        "stats",
+        "tools",
+        "utils"
+      ],
+      "Hash": "420012f82591a2a20156ef65d4aa210a"
+    },
+    "IRanges": {
+      "Package": "IRanges",
+      "Version": "2.38.1",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BiocGenerics",
+        "R",
+        "S4Vectors",
+        "methods",
+        "stats",
+        "stats4",
+        "utils"
+      ],
+      "Hash": "066f3c5d6b022ed62c91ce49e4d8f619"
+    },
+    "IRdisplay": {
+      "Package": "IRdisplay",
+      "Version": "1.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "methods",
+        "repr"
+      ],
+      "Hash": "5ea7862cfcd8b146f233ed1ac9fb8eda"
+    },
+    "IRkernel": {
+      "Package": "IRkernel",
+      "Version": "1.3.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "IRdisplay",
+        "R",
+        "crayon",
+        "digest",
+        "evaluate",
+        "jsonlite",
+        "methods",
+        "pbdZMQ",
+        "repr",
+        "uuid"
+      ],
+      "Hash": "e57f593112825c91949debb0da1d45d6"
+    },
+    "JASPAR2020": {
+      "Package": "JASPAR2020",
+      "Version": "0.99.10",
+      "Source": "Bioconductor",
+      "Requirements": [
+        "R",
+        "methods"
+      ],
+      "Hash": "779f73c6fcd71f791c0985fde2aff785"
+    },
+    "KEGGREST": {
+      "Package": "KEGGREST",
+      "Version": "1.44.1",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "Biostrings",
+        "R",
+        "httr",
+        "methods",
+        "png"
+      ],
+      "Hash": "017f19c09477c0473073518db9076ac1"
     },
     "KernSmooth": {
       "Package": "KernSmooth",
@@ -80,6 +668,81 @@
       ],
       "Hash": "1920b2f11133b12350024297d8a4ff4a"
     },
+    "MatrixGenerics": {
+      "Package": "MatrixGenerics",
+      "Version": "1.16.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "matrixStats",
+        "methods"
+      ],
+      "Hash": "152dbbcde6a9a7c7f3beef79b68cd76a"
+    },
+    "ProtGenerics": {
+      "Package": "ProtGenerics",
+      "Version": "1.36.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "methods"
+      ],
+      "Hash": "a3737c10efc865abfa9d204ca8735b74"
+    },
+    "R.cache": {
+      "Package": "R.cache",
+      "Version": "0.16.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "R.methodsS3",
+        "R.oo",
+        "R.utils",
+        "digest",
+        "utils"
+      ],
+      "Hash": "fe539ca3f8efb7410c3ae2cf5fe6c0f8"
+    },
+    "R.methodsS3": {
+      "Package": "R.methodsS3",
+      "Version": "1.8.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "utils"
+      ],
+      "Hash": "278c286fd6e9e75d0c2e8f731ea445c8"
+    },
+    "R.oo": {
+      "Package": "R.oo",
+      "Version": "1.26.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "R.methodsS3",
+        "methods",
+        "utils"
+      ],
+      "Hash": "4fed809e53ddb5407b3da3d0f572e591"
+    },
+    "R.utils": {
+      "Package": "R.utils",
+      "Version": "2.12.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "R.methodsS3",
+        "R.oo",
+        "methods",
+        "tools",
+        "utils"
+      ],
+      "Hash": "3dc2829b790254bfba21e60965787651"
+    },
     "R6": {
       "Package": "R6",
       "Version": "2.5.1",
@@ -107,6 +770,18 @@
       ],
       "Hash": "45f0398006e83a5b10b72a90663d8d8c"
     },
+    "RCurl": {
+      "Package": "RCurl",
+      "Version": "1.98-1.14",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "bitops",
+        "methods"
+      ],
+      "Hash": "47f648d288079d0c696804ad4e55197e"
+    },
     "ROCR": {
       "Package": "ROCR",
       "Version": "1.0-11",
@@ -121,6 +796,25 @@
         "stats"
       ],
       "Hash": "cc151930e20e16427bc3d0daec62b4a9"
+    },
+    "RSQLite": {
+      "Package": "RSQLite",
+      "Version": "2.3.7",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "DBI",
+        "R",
+        "bit64",
+        "blob",
+        "cpp11",
+        "memoise",
+        "methods",
+        "pkgconfig",
+        "plogr",
+        "rlang"
+      ],
+      "Hash": "46b45a4dd7bb0e0f4e3fc22245817240"
     },
     "RSpectra": {
       "Package": "RSpectra",
@@ -203,6 +897,17 @@
       "Repository": "CRAN",
       "Hash": "1c0aa18b97e6aaa17f93b8b866c0ace5"
     },
+    "RcppRoll": {
+      "Package": "RcppRoll",
+      "Version": "0.3.0",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "Rcpp"
+      ],
+      "Hash": "84a03997fbb5acfb3c9b43bad88fea1f"
+    },
     "RcppTOML": {
       "Package": "RcppTOML",
       "Version": "0.2.2",
@@ -214,6 +919,51 @@
       ],
       "Hash": "c232938949fcd8126034419cc529333a"
     },
+    "Rhdf5lib": {
+      "Package": "Rhdf5lib",
+      "Version": "1.26.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "c92ba8b9a2c5c9ff600a1062a3b7b727"
+    },
+    "Rhtslib": {
+      "Package": "Rhtslib",
+      "Version": "3.0.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "tools",
+        "zlibbioc"
+      ],
+      "Hash": "5d6514cd44a0106581e3310f3972a82e"
+    },
+    "Rsamtools": {
+      "Package": "Rsamtools",
+      "Version": "2.20.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BiocGenerics",
+        "BiocParallel",
+        "Biostrings",
+        "GenomeInfoDb",
+        "GenomicRanges",
+        "IRanges",
+        "R",
+        "Rhtslib",
+        "S4Vectors",
+        "XVector",
+        "bitops",
+        "methods",
+        "stats",
+        "utils",
+        "zlibbioc"
+      ],
+      "Hash": "9762f24dcbdbd1626173c516bb64792c"
+    },
     "Rtsne": {
       "Package": "Rtsne",
       "Version": "0.17",
@@ -224,6 +974,39 @@
         "stats"
       ],
       "Hash": "f81f7764a3c3e310b1d40e1a8acee19e"
+    },
+    "S4Arrays": {
+      "Package": "S4Arrays",
+      "Version": "1.4.1",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BiocGenerics",
+        "IRanges",
+        "Matrix",
+        "R",
+        "S4Vectors",
+        "abind",
+        "crayon",
+        "methods",
+        "stats"
+      ],
+      "Hash": "deeed4802c5132e88f24a432a1caf5e0"
+    },
+    "S4Vectors": {
+      "Package": "S4Vectors",
+      "Version": "0.42.1",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BiocGenerics",
+        "R",
+        "methods",
+        "stats",
+        "stats4",
+        "utils"
+      ],
+      "Hash": "86398fc7c5f6be4ba29fe23ed08c2da6"
     },
     "Seurat": {
       "Package": "Seurat",
@@ -292,6 +1075,57 @@
       ],
       "Hash": "aa2040fec3d03e3e598e0b406a84a104"
     },
+    "SeuratData": {
+      "Package": "SeuratData",
+      "Version": "0.2.2.9001",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "seurat-data",
+      "RemoteUsername": "satijalab",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "4dc08e022f51c324bc7bf785b1b5771d2742701d",
+      "Requirements": [
+        "R",
+        "SeuratObject",
+        "cli",
+        "crayon",
+        "rappdirs",
+        "stats",
+        "utils"
+      ],
+      "Hash": "58823864a94ee08545fb114c5c629f51"
+    },
+    "SeuratDisk": {
+      "Package": "SeuratDisk",
+      "Version": "0.0.0.9021",
+      "Source": "GitHub",
+      "Remotes": "satijalab/seurat-data",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "seurat-disk",
+      "RemoteUsername": "mojaveazure",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "877d4e18ab38c686f5db54f8cd290274ccdbe295",
+      "Requirements": [
+        "Matrix",
+        "R",
+        "R6",
+        "Seurat",
+        "SeuratObject",
+        "cli",
+        "crayon",
+        "hdf5r",
+        "methods",
+        "rlang",
+        "stats",
+        "stringi",
+        "tools",
+        "utils",
+        "withr"
+      ],
+      "Hash": "d9eddfd211bbe8278b1805fe08ffd523"
+    },
     "SeuratObject": {
       "Package": "SeuratObject",
       "Version": "5.0.2",
@@ -319,6 +1153,224 @@
       ],
       "Hash": "e9b70412b7e04571b46101f5dcbaacad"
     },
+    "SeuratWrappers": {
+      "Package": "SeuratWrappers",
+      "Version": "0.3.5",
+      "Source": "GitHub",
+      "Remotes": "welch-lab/liger, hms-dbmi/conos, immunogenomics/harmony, immunogenomics/presto, satijalab/seurat-data, velocyto-team/velocyto.R, SaskiaFreytag/schex@031320d, cole-trapnell-lab/monocle3, mojaveazure/seurat-disk, powellgenomicslab/Nebulosa, atakanekiz/CIPR-Package, prabhakarlab/Banksy",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "seurat-wrappers",
+      "RemoteUsername": "satijalab",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "8d46d6c47c089e193fe5c02a8c23970715918aa9",
+      "Requirements": [
+        "BiocManager",
+        "Matrix",
+        "R",
+        "Seurat",
+        "cowplot",
+        "ggplot2",
+        "igraph",
+        "methods",
+        "remotes",
+        "rlang",
+        "rsvd",
+        "stats",
+        "utils"
+      ],
+      "Hash": "656cb21264cd7fe42a41fbc0bf3f82ee"
+    },
+    "Signac": {
+      "Package": "Signac",
+      "Version": "1.13.0",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "BiocGenerics",
+        "GenomeInfoDb",
+        "GenomicRanges",
+        "IRanges",
+        "Matrix",
+        "R",
+        "Rcpp",
+        "RcppRoll",
+        "Rsamtools",
+        "S4Vectors",
+        "SeuratObject",
+        "data.table",
+        "dplyr",
+        "fastmatch",
+        "future",
+        "future.apply",
+        "ggplot2",
+        "grid",
+        "irlba",
+        "lifecycle",
+        "methods",
+        "patchwork",
+        "pbapply",
+        "rlang",
+        "scales",
+        "stats",
+        "stringi",
+        "tidyr",
+        "tidyselect",
+        "utils",
+        "vctrs"
+      ],
+      "Hash": "e29e5a01bf36b5d979a54a7650df301a"
+    },
+    "SingleCellExperiment": {
+      "Package": "SingleCellExperiment",
+      "Version": "1.26.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BiocGenerics",
+        "DelayedArray",
+        "GenomicRanges",
+        "S4Vectors",
+        "SummarizedExperiment",
+        "methods",
+        "stats",
+        "utils"
+      ],
+      "Hash": "4476ad434a5e7887884521417cab3764"
+    },
+    "SparseArray": {
+      "Package": "SparseArray",
+      "Version": "1.4.8",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BiocGenerics",
+        "IRanges",
+        "Matrix",
+        "MatrixGenerics",
+        "R",
+        "S4Arrays",
+        "S4Vectors",
+        "XVector",
+        "matrixStats",
+        "methods",
+        "stats",
+        "utils"
+      ],
+      "Hash": "97f70ff11c14edd379ee2429228cbb60"
+    },
+    "SummarizedExperiment": {
+      "Package": "SummarizedExperiment",
+      "Version": "1.34.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "Biobase",
+        "BiocGenerics",
+        "DelayedArray",
+        "GenomeInfoDb",
+        "GenomicRanges",
+        "IRanges",
+        "Matrix",
+        "MatrixGenerics",
+        "R",
+        "S4Arrays",
+        "S4Vectors",
+        "methods",
+        "stats",
+        "tools",
+        "utils"
+      ],
+      "Hash": "2f6c8cc972ed6aee07c96e3dff729d15"
+    },
+    "TFBSTools": {
+      "Package": "TFBSTools",
+      "Version": "1.42.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BSgenome",
+        "Biobase",
+        "BiocGenerics",
+        "BiocParallel",
+        "Biostrings",
+        "CNEr",
+        "DBI",
+        "DirichletMultinomial",
+        "GenomeInfoDb",
+        "GenomicRanges",
+        "IRanges",
+        "R",
+        "RSQLite",
+        "S4Vectors",
+        "TFMPvalue",
+        "XML",
+        "XVector",
+        "caTools",
+        "grid",
+        "gtools",
+        "methods",
+        "parallel",
+        "pwalign",
+        "rtracklayer",
+        "seqLogo"
+      ],
+      "Hash": "08c6da44e347e91d17156489dc5295fb"
+    },
+    "TFMPvalue": {
+      "Package": "TFMPvalue",
+      "Version": "0.0.9",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "Rcpp"
+      ],
+      "Hash": "d2974f239e0c14cade60062fe2cbdf0b"
+    },
+    "UCSC.utils": {
+      "Package": "UCSC.utils",
+      "Version": "1.0.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "S4Vectors",
+        "httr",
+        "jsonlite",
+        "methods",
+        "stats"
+      ],
+      "Hash": "83d45b690bffd09d1980c224ef329f5b"
+    },
+    "XML": {
+      "Package": "XML",
+      "Version": "3.99-0.16.1",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "methods",
+        "utils"
+      ],
+      "Hash": "da3098169c887914551b607c66fe2a28"
+    },
+    "XVector": {
+      "Package": "XVector",
+      "Version": "0.44.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BiocGenerics",
+        "IRanges",
+        "R",
+        "S4Vectors",
+        "methods",
+        "tools",
+        "utils",
+        "zlibbioc"
+      ],
+      "Hash": "4245b9938ac74c0dbddbebbec6036ab4"
+    },
     "abind": {
       "Package": "abind",
       "Version": "1.4-5",
@@ -330,6 +1382,27 @@
         "utils"
       ],
       "Hash": "4f57884290cc75ab22f4af9e9d4ca862"
+    },
+    "annotate": {
+      "Package": "annotate",
+      "Version": "1.82.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "AnnotationDbi",
+        "Biobase",
+        "BiocGenerics",
+        "DBI",
+        "R",
+        "XML",
+        "graphics",
+        "httr",
+        "methods",
+        "stats",
+        "utils",
+        "xtable"
+      ],
+      "Hash": "659c0a3bfad51dc798e4b4eb0f2cdedc"
     },
     "askpass": {
       "Package": "askpass",
@@ -360,6 +1433,21 @@
         "R"
       ],
       "Hash": "543776ae6848fde2f48ff3816d0628bc"
+    },
+    "beachmat": {
+      "Package": "beachmat",
+      "Version": "2.20.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BiocGenerics",
+        "DelayedArray",
+        "Matrix",
+        "Rcpp",
+        "SparseArray",
+        "methods"
+      ],
+      "Hash": "10e94b1bce9070632a40c6b873f8b2d4"
     },
     "bit": {
       "Package": "bit",
@@ -403,6 +1491,13 @@
         "vctrs"
       ],
       "Hash": "40415719b5a479b87949f3aa0aee737c"
+    },
+    "brew": {
+      "Package": "brew",
+      "Version": "1.0-10",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "8f4a384e19dccd8c65356dc096847b76"
     },
     "broom": {
       "Package": "broom",
@@ -538,6 +1633,13 @@
       ],
       "Hash": "61e097f35917d342622f21cdc79c256e"
     },
+    "collections": {
+      "Package": "collections",
+      "Version": "0.3.7",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "90a0eda114ab0bef170ddbf5ef0cd93f"
+    },
     "colorspace": {
       "Package": "colorspace",
       "Version": "2.1-0",
@@ -634,6 +1736,20 @@
       ],
       "Hash": "411ca2c03b1ce5f548345d2fc2685f7a"
     },
+    "cyclocomp": {
+      "Package": "cyclocomp",
+      "Version": "1.1.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "callr",
+        "crayon",
+        "desc",
+        "remotes",
+        "withr"
+      ],
+      "Hash": "cdc4a473222b0112d4df0bcfbed12d44"
+    },
     "data.table": {
       "Package": "data.table",
       "Version": "1.15.4",
@@ -684,6 +1800,19 @@
         "graphics"
       ],
       "Hash": "24754fce82729ff85317dd195b6646a8"
+    },
+    "desc": {
+      "Package": "desc",
+      "Version": "1.4.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "R6",
+        "cli",
+        "utils"
+      ],
+      "Hash": "99b79fcbd6c4d1ce087f5c5c758b384f"
     },
     "digest": {
       "Package": "digest",
@@ -761,6 +1890,33 @@
       ],
       "Hash": "54ed3ea01b11e81a86544faaecfef8e2"
     },
+    "ensembldb": {
+      "Package": "ensembldb",
+      "Version": "2.28.1",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "AnnotationDbi",
+        "AnnotationFilter",
+        "Biobase",
+        "BiocGenerics",
+        "Biostrings",
+        "DBI",
+        "GenomeInfoDb",
+        "GenomicFeatures",
+        "GenomicRanges",
+        "IRanges",
+        "ProtGenerics",
+        "R",
+        "RSQLite",
+        "Rsamtools",
+        "S4Vectors",
+        "curl",
+        "methods",
+        "rtracklayer"
+      ],
+      "Hash": "3cc0b1fdf6626029488714dc318fe039"
+    },
     "evaluate": {
       "Package": "evaluate",
       "Version": "0.24.0",
@@ -811,6 +1967,16 @@
       "Repository": "CRAN",
       "Hash": "aa5e1cd11c2d15497494c5292d7ffcc8"
     },
+    "fastmatch": {
+      "Package": "fastmatch",
+      "Version": "1.1-4",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "8c406b7284bbaef08e01c6687367f195"
+    },
     "fitdistrplus": {
       "Package": "fitdistrplus",
       "Version": "1.1-11",
@@ -854,6 +2020,16 @@
       ],
       "Hash": "1a0a9a3d5083d0d573c4214576f1e690"
     },
+    "formatR": {
+      "Package": "formatR",
+      "Version": "1.14",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "63cb26d12517c7863f5abb006c5e0f25"
+    },
     "fs": {
       "Package": "fs",
       "Version": "1.6.4",
@@ -864,6 +2040,29 @@
         "methods"
       ],
       "Hash": "15aeb8c27f5ea5161f9f6a641fafd93a"
+    },
+    "futile.logger": {
+      "Package": "futile.logger",
+      "Version": "1.4.3",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "futile.options",
+        "lambda.r",
+        "utils"
+      ],
+      "Hash": "99f0ace8c05ec7d3683d27083c4f1e7e"
+    },
+    "futile.options": {
+      "Package": "futile.options",
+      "Version": "1.0.1",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "0d9bf02413ddc2bbe8da9ce369dcdd2b"
     },
     "future": {
       "Package": "future",
@@ -981,6 +2180,32 @@
         "withr"
       ],
       "Hash": "66488692cb8621bc78df1b9b819497a6"
+    },
+    "glmGamPoi": {
+      "Package": "glmGamPoi",
+      "Version": "1.16.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BiocGenerics",
+        "DelayedArray",
+        "DelayedMatrixStats",
+        "HDF5Array",
+        "MatrixGenerics",
+        "Rcpp",
+        "RcppArmadillo",
+        "SingleCellExperiment",
+        "SummarizedExperiment",
+        "beachmat",
+        "matrixStats",
+        "methods",
+        "rlang",
+        "splines",
+        "stats",
+        "utils",
+        "vctrs"
+      ],
+      "Hash": "21e305cf5faebb13bee698a5a1c4bced"
     },
     "globals": {
       "Package": "globals",
@@ -1145,6 +2370,20 @@
       ],
       "Hash": "9171f898db9d9c4c1b2c745adc2c1ef1"
     },
+    "hdf5r": {
+      "Package": "hdf5r",
+      "Version": "1.3.10",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "R6",
+        "bit64",
+        "methods",
+        "utils"
+      ],
+      "Hash": "455082f1cd7e02855a5bd087527706b5"
+    },
     "here": {
       "Package": "here",
       "Version": "1.0.1",
@@ -1154,6 +2393,23 @@
         "rprojroot"
       ],
       "Hash": "24b224366f9c2e7534d2344d10d59211"
+    },
+    "hexbin": {
+      "Package": "hexbin",
+      "Version": "1.28.3",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "grDevices",
+        "graphics",
+        "grid",
+        "lattice",
+        "methods",
+        "stats",
+        "utils"
+      ],
+      "Hash": "124e384c01d8746f1c12f9dc1b80a161"
     },
     "highr": {
       "Package": "highr",
@@ -1353,6 +2609,41 @@
       ],
       "Hash": "b64ec208ac5bc1852b285f665d6368b3"
     },
+    "lambda.r": {
+      "Package": "lambda.r",
+      "Version": "1.2.4",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "formatR"
+      ],
+      "Hash": "b1e925c4b9ffeb901bacf812cbe9a6ad"
+    },
+    "languageserver": {
+      "Package": "languageserver",
+      "Version": "0.3.16",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "R6",
+        "callr",
+        "collections",
+        "fs",
+        "jsonlite",
+        "lintr",
+        "parallel",
+        "roxygen2",
+        "stringi",
+        "styler",
+        "tools",
+        "utils",
+        "xml2",
+        "xmlparsedata"
+      ],
+      "Hash": "f8901f44aedb6d7e7d03b5533986bd97"
+    },
     "later": {
       "Package": "later",
       "Version": "1.3.2",
@@ -1414,6 +2705,27 @@
         "rlang"
       ],
       "Hash": "b8552d117e1b808b09a832f589b79035"
+    },
+    "lintr": {
+      "Package": "lintr",
+      "Version": "3.1.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "backports",
+        "codetools",
+        "cyclocomp",
+        "digest",
+        "glue",
+        "knitr",
+        "rex",
+        "stats",
+        "utils",
+        "xml2",
+        "xmlparsedata"
+      ],
+      "Hash": "08cff46381a242d44c0d8dd0aabd9f71"
     },
     "listenv": {
       "Package": "listenv",
@@ -1615,6 +2927,16 @@
       ],
       "Hash": "68a2d681e10cf72f0afa1d84d45380e5"
     },
+    "pbdZMQ": {
+      "Package": "pbdZMQ",
+      "Version": "0.3-11",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "96432d2e7560d5242824427ecdf0fa98"
+    },
     "pillar": {
       "Package": "pillar",
       "Version": "1.9.0",
@@ -1632,6 +2954,21 @@
       ],
       "Hash": "15da5a8412f317beeee6175fbc76f4bb"
     },
+    "pkgbuild": {
+      "Package": "pkgbuild",
+      "Version": "1.4.4",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "R6",
+        "callr",
+        "cli",
+        "desc",
+        "processx"
+      ],
+      "Hash": "a29e8e134a460a01e0ca67a4763c595b"
+    },
     "pkgconfig": {
       "Package": "pkgconfig",
       "Version": "2.0.3",
@@ -1641,6 +2978,34 @@
         "utils"
       ],
       "Hash": "01f28d4278f15c76cddbea05899c5d6f"
+    },
+    "pkgload": {
+      "Package": "pkgload",
+      "Version": "1.3.4",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "cli",
+        "crayon",
+        "desc",
+        "fs",
+        "glue",
+        "methods",
+        "pkgbuild",
+        "rlang",
+        "rprojroot",
+        "utils",
+        "withr"
+      ],
+      "Hash": "876c618df5ae610be84356d5d7a5d124"
+    },
+    "plogr": {
+      "Package": "plogr",
+      "Version": "0.2.0",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Hash": "09eb987710984fc2905c7129c7d85e65"
     },
     "plotly": {
       "Package": "plotly",
@@ -1704,6 +3069,62 @@
         "R"
       ],
       "Hash": "436542aadb70675e361cf359285af7c7"
+    },
+    "poweRlaw": {
+      "Package": "poweRlaw",
+      "Version": "0.80.0",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "methods",
+        "parallel",
+        "pracma",
+        "stats",
+        "utils"
+      ],
+      "Hash": "5426de2f982c69863ea338e5df80b9ef"
+    },
+    "pracma": {
+      "Package": "pracma",
+      "Version": "2.4.4",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "grDevices",
+        "graphics",
+        "stats",
+        "utils"
+      ],
+      "Hash": "44bc172d47d1ea0a638d9f299e321203"
+    },
+    "presto": {
+      "Package": "presto",
+      "Version": "1.0.0",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "presto",
+      "RemoteUsername": "immunogenomics",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "7636b3d0465c468c35853f82f1717d3a64b3c8f6",
+      "Requirements": [
+        "Matrix",
+        "R",
+        "Rcpp",
+        "RcppArmadillo",
+        "data.table",
+        "dplyr",
+        "methods",
+        "purrr",
+        "rlang",
+        "stats",
+        "tibble",
+        "tidyr",
+        "utils"
+      ],
+      "Hash": "c682f57757230a29913ad71f22aef990"
     },
     "prettyunits": {
       "Package": "prettyunits",
@@ -1796,6 +3217,22 @@
       ],
       "Hash": "1cba04a4e9414bdefc9dcaa99649a8dc"
     },
+    "pwalign": {
+      "Package": "pwalign",
+      "Version": "1.0.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BiocGenerics",
+        "Biostrings",
+        "IRanges",
+        "S4Vectors",
+        "XVector",
+        "methods",
+        "utils"
+      ],
+      "Hash": "ab816689019959eb97edc8ff9595c7be"
+    },
     "ragg": {
       "Package": "ragg",
       "Version": "1.3.2",
@@ -1872,15 +3309,45 @@
       ],
       "Hash": "76c9e04c712a05848ae7a23d2f170a40"
     },
-    "renv": {
-      "Package": "renv",
-      "Version": "1.0.8",
+    "remotes": {
+      "Package": "remotes",
+      "Version": "2.5.0",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
+        "R",
+        "methods",
+        "stats",
+        "tools",
         "utils"
       ],
-      "Hash": "e082251834fa427514e68bec8afc8fda"
+      "Hash": "3ee025083e66f18db6cf27b56e23e141"
+    },
+    "renv": {
+      "Package": "renv",
+      "Version": "1.0.7",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "utils"
+      ],
+      "Hash": "397b7b2a265bc5a7a06852524dabae20"
+    },
+    "repr": {
+      "Package": "repr",
+      "Version": "1.1.7",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "base64enc",
+        "grDevices",
+        "htmltools",
+        "jsonlite",
+        "pillar",
+        "utils"
+      ],
+      "Hash": "1393acc49816f4fe143d87fb33e75631"
     },
     "reprex": {
       "Package": "reprex",
@@ -1917,6 +3384,22 @@
       ],
       "Hash": "bb5996d0bd962d214a11140d77589917"
     },
+    "restfulr": {
+      "Package": "restfulr",
+      "Version": "0.0.15",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "RCurl",
+        "S4Vectors",
+        "XML",
+        "methods",
+        "rjson",
+        "yaml"
+      ],
+      "Hash": "44651c1e68eda9d462610aca9f15a815"
+    },
     "reticulate": {
       "Package": "reticulate",
       "Version": "1.37.0",
@@ -1938,6 +3421,49 @@
         "withr"
       ],
       "Hash": "9465d3bc6ec44eeaa52527ac2cba4020"
+    },
+    "rex": {
+      "Package": "rex",
+      "Version": "1.2.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "lazyeval"
+      ],
+      "Hash": "ae34cd56890607370665bee5bd17812f"
+    },
+    "rhdf5": {
+      "Package": "rhdf5",
+      "Version": "2.48.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "R",
+        "Rhdf5lib",
+        "methods",
+        "rhdf5filters"
+      ],
+      "Hash": "74d8c5aeb96d090ce8efc9ffd16afa2b"
+    },
+    "rhdf5filters": {
+      "Package": "rhdf5filters",
+      "Version": "1.16.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "Rhdf5lib"
+      ],
+      "Hash": "99e15369f8fb17dc188377234de13fc6"
+    },
+    "rjson": {
+      "Package": "rjson",
+      "Version": "0.2.21",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "f9da75e6444e95a1baf8ca24909d63b9"
     },
     "rlang": {
       "Package": "rlang",
@@ -1973,6 +3499,32 @@
       ],
       "Hash": "27f9502e1cdbfa195f94e03b0f517484"
     },
+    "roxygen2": {
+      "Package": "roxygen2",
+      "Version": "7.3.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "R6",
+        "brew",
+        "cli",
+        "commonmark",
+        "cpp11",
+        "desc",
+        "knitr",
+        "methods",
+        "pkgload",
+        "purrr",
+        "rlang",
+        "stringi",
+        "stringr",
+        "utils",
+        "withr",
+        "xml2"
+      ],
+      "Hash": "c25fe7b2d8cba73d1b63c947bf7afdb9"
+    },
     "rprojroot": {
       "Package": "rprojroot",
       "Version": "2.0.4",
@@ -1989,6 +3541,44 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "96710351d642b70e8f02ddeb237c46a7"
+    },
+    "rsvd": {
+      "Package": "rsvd",
+      "Version": "1.0.5",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "Matrix",
+        "R"
+      ],
+      "Hash": "b462187d887abc519894874486dbd6fd"
+    },
+    "rtracklayer": {
+      "Package": "rtracklayer",
+      "Version": "1.64.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "BiocGenerics",
+        "BiocIO",
+        "Biostrings",
+        "GenomeInfoDb",
+        "GenomicAlignments",
+        "GenomicRanges",
+        "IRanges",
+        "R",
+        "Rsamtools",
+        "S4Vectors",
+        "XML",
+        "XVector",
+        "curl",
+        "httr",
+        "methods",
+        "restfulr",
+        "tools",
+        "zlibbioc"
+      ],
+      "Hash": "3d6f004fce582bd7d68e2e18d44abbc1"
     },
     "rvest": {
       "Package": "rvest",
@@ -2094,6 +3684,20 @@
       ],
       "Hash": "3838071b66e0c566d55cc26bd6e27bf4"
     },
+    "seqLogo": {
+      "Package": "seqLogo",
+      "Version": "1.70.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "R",
+        "grDevices",
+        "grid",
+        "methods",
+        "stats4"
+      ],
+      "Hash": "8d3102283e7ba083042118b22d805510"
+    },
     "shiny": {
       "Package": "shiny",
       "Version": "1.8.1.1",
@@ -2127,6 +3731,44 @@
       ],
       "Hash": "54b26646816af9960a4c64d8ceec75d6"
     },
+    "shinyBS": {
+      "Package": "shinyBS",
+      "Version": "0.61.1",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "htmltools",
+        "shiny"
+      ],
+      "Hash": "e44255f073ecdc26ba6bc2ce3fcf174d"
+    },
+    "shinydashboard": {
+      "Package": "shinydashboard",
+      "Version": "0.7.2",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "htmltools",
+        "promises",
+        "shiny",
+        "utils"
+      ],
+      "Hash": "e418b532e9bb4eb22a714b9a9f1acee7"
+    },
+    "shinyjs": {
+      "Package": "shinyjs",
+      "Version": "2.1.0",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "digest",
+        "jsonlite",
+        "shiny"
+      ],
+      "Hash": "802e4786b353a4bb27116957558548d5"
+    },
     "sitmo": {
       "Package": "sitmo",
       "Version": "2.0.2",
@@ -2137,6 +3779,17 @@
         "Rcpp"
       ],
       "Hash": "c956d93f6768a9789edbc13072b70c78"
+    },
+    "snow": {
+      "Package": "snow",
+      "Version": "0.4-4",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "utils"
+      ],
+      "Hash": "40b74690debd20c57d93d8c246b305d4"
     },
     "sourcetools": {
       "Package": "sourcetools",
@@ -2178,6 +3831,20 @@
         "methods"
       ],
       "Hash": "ffe1f9e95a4375530747b268f82b5086"
+    },
+    "sparseMatrixStats": {
+      "Package": "sparseMatrixStats",
+      "Version": "1.16.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Requirements": [
+        "Matrix",
+        "MatrixGenerics",
+        "Rcpp",
+        "matrixStats",
+        "methods"
+      ],
+      "Hash": "7e500a5a527460ca0406473bdcade286"
     },
     "spatstat.data": {
       "Package": "spatstat.data",
@@ -2312,6 +3979,25 @@
         "vctrs"
       ],
       "Hash": "960e2ae9e09656611e0b8214ad543207"
+    },
+    "styler": {
+      "Package": "styler",
+      "Version": "1.10.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "R.cache",
+        "cli",
+        "magrittr",
+        "purrr",
+        "rlang",
+        "rprojroot",
+        "tools",
+        "vctrs",
+        "withr"
+      ],
+      "Hash": "93a2b1beac2437bdcc4724f8bf867e2c"
     },
     "survival": {
       "Package": "survival",
@@ -2623,6 +4309,16 @@
       ],
       "Hash": "1d0336142f4cd25d8d23cd3ba7a8fb61"
     },
+    "xmlparsedata": {
+      "Package": "xmlparsedata",
+      "Version": "1.0.5",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "45e4bf3c46476896e821fc0a408fb4fc"
+    },
     "xtable": {
       "Package": "xtable",
       "Version": "1.8-4",
@@ -2641,6 +4337,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "29240487a071f535f5e5d5a323b7afbd"
+    },
+    "zlibbioc": {
+      "Package": "zlibbioc",
+      "Version": "1.50.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor 3.19",
+      "Hash": "3db02e3c460e1c852365df117a2b441b"
     },
     "zoo": {
       "Package": "zoo",

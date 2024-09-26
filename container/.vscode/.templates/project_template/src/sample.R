@@ -110,6 +110,3 @@ plot_embedding(
                "CD14", "FCER1A", "FCGR3A", 
                "LYZ", "CD4", "CD8")
 )
-
-
-.libPaths()

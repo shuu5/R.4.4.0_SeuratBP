@@ -3,6 +3,8 @@ FROM rocker/rstudio:4.4.0
 # 必要なlinux パッケージをインストール(インストールするRパッケージごとに修正が必要)
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
+    libcurl4-gnutls-dev \
+    && apt-get install -y --no-install-recommends \
     libxt-dev \
     fonts-ipaexfont \
     libhdf5-dev \
@@ -13,6 +15,12 @@ RUN apt-get update \
     python3.11-venv \
     python3-pip \
     libfftw3-dev \
+    libssl-dev \
+    libxml2-dev \
+    libhts-dev \
+    libbz2-dev \
+    libgsl-dev \
+    libzmq3-dev \
   && apt-get clean
 
 # Python 3.11のシンボリックリンクを作成
